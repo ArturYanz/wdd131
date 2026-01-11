@@ -35,6 +35,7 @@ header {
 
 .links-above {
     background-color: var(--secondary-color);
+    color: var(--base-color);
     padding: 0.5rem;
     font-size: larger;
     font-weight: 700;
@@ -84,7 +85,7 @@ h1 {
     padding: 2rem;
 }
 
-.card nav {
+.card ul {
     margin-top: 100px;
 }
 
