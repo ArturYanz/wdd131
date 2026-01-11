@@ -1,0 +1,147 @@
+* {
+    margin: 0 auto;
+}
+
+:root {
+    --secondary-color: rgb(20, 155, 20);
+    --base-color: rgb(0, 33, 21);
+    --text-color: white;
+
+}
+
+body {
+    font-family: "Oxanium", sans-serif;
+    font-weight: 400;
+}
+
+header span {
+    display: block;
+}
+
+header {
+    background-color: var(--base-color);
+    color: var(--secondary-color);
+    text-align: center;
+    
+    
+}
+
+#course-title {
+    padding: 1rem;
+    font-size: larger;
+    font-weight: 700;
+
+}
+
+.links-above {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.links-above ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+
+.links-above a {
+    text-decoration: none;
+    color: black;
+}
+
+.links-above a:hover {
+    font-weight: 700;
+    font-size: larger;
+}
+
+main {
+    max-width: 1000px;
+
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 800px 200px;
+}
+
+.card {
+    max-width: 700px;
+    border: 1px solid var(--base-color);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    
+}
+
+.card p {
+    padding: 2rem;
+}
+
+.card nav {
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--base-color);
+    color: var(--secondary-color);
+    padding: 0.75rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer {
+    background-color: var(--base-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.profile {
+    height: 200px;
+    width: 200px;
+    margin: 1rem 0 0 2rem;
+    border: 2px solid black;
+}
+
+.little-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.little-info p {
+    
+    margin: 1rem 0 0 1rem;
+    text-align: justify;
+}
+
+.chile {
+    text-align: center;
+    font-weight: 700;
+    margin: 0 3rem 0 3rem;
+    border-bottom: 1px solid black;
+    font-size: larger;
+}
+
+.flag {
+    height: 100px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.p-chile {
+    text-align: left;
+}
+footer p {
+    padding: 0.25rem;
+    font-weight: 700;
+    font-size: larger;
+}
