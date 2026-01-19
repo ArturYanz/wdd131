@@ -9,11 +9,12 @@
         display: flex;
         align-items: center;
         padding: 1rem;
+        color: var(--nav-text)
     }
     
     nav {
         display: flex;
-        color: var(--nav-color);
+        color: var(--nav-text);
         flex: 1;
         justify-content: center;
     

@@ -48,6 +48,7 @@
    
     header {
         background-color: var(--nav-color);
+        color: var(--nav-text);
     }
 
     .navigation {
@@ -69,8 +70,7 @@
     }
 
     .navigation a:hover {
-        font-weight: 700;
-        font-size: larger;
+        font-size: 35px;
         color: var(--nav-hover);
     }
 
