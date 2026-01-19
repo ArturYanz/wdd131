@@ -1,0 +1,39 @@
+@media screen and (min-width: 750px) {
+    
+    #menu {
+            display: none;
+    
+    }
+
+    .navigation {
+        flex-direction: row;
+        color: var(--nav-color);
+
+        
+    }
+    header p {
+        padding-top: 0.35rem;
+    }
+
+    .navigation a {
+        display: block;
+        
+        justify-content: flex-end;
+    }
+
+    .stuff {
+        margin: 1rem auto;
+    }
+
+    main {
+        max-width: 1500px;
+        margin: 0;
+    }
+
+        div {
+           
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+}
