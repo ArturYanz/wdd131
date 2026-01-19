@@ -4,21 +4,36 @@
             display: none;
     
     }
+    
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    nav {
+        display: flex;
+        color: var(--nav-color);
+        flex: 1;
+        justify-content: center;
+    
+    }
 
     .navigation {
         flex-direction: row;
-        color: var(--nav-color);
-
-        
+        gap: 1.5rem;
     }
+
     header p {
         padding-top: 0.35rem;
+        
     }
 
     .navigation a {
         display: block;
+        flex: 1 1 100%;
+        font-size: 30px;
         
-        justify-content: flex-end;
     }
 
     .stuff {
@@ -30,10 +45,10 @@
         margin: 0;
     }
 
-        div {
+    div {
            
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 }

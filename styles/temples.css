@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: o;
+    padding: 0;
     box-sizing: border-box;
 
 }
@@ -44,6 +44,11 @@
     #menu.open::before {
         content: "x";
     }
+  
+   
+    header {
+        background-color: var(--nav-color);
+    }
 
     .navigation {
         display: flex;
@@ -52,6 +57,7 @@
         list-style: none;
         background-color: var(--nav-color);
         color: var(--nav-text);
+
     }
     .navigation a {
         display: none;
@@ -76,7 +82,7 @@
     header p {
         font-size: 35px;
         color: var(--nav-text);
-        float: left;
+        
     }
 
 
@@ -121,10 +127,6 @@
     }
 
 
-
-
-
-
     footer {
         background-color: var(--nav-color);
         color: var(--nav-text);
@@ -139,11 +141,5 @@
     .last-mod {
         font-size: 35px;
     }
-    .stuff {
-        margin: .5rem;
-        border: 1px solid rgb(0 0 0 / .1);
-        background-color: #bed;
-        max-width: 580px;
-        height: 100vh;
-    }
+    
 }
