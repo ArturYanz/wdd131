@@ -1,0 +1,6 @@
+.hero img {
+    width: auto;
+    height: auto;
+    /*object-fit: contain;*/
+    aspect-ratio: auto;
+}
