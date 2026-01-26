@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arturo Yánez">
+    <meta name="description" content="Web page containing data and weather information of the chilean nation. Enjoy!">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    
+    <title> WDD 131 | Country Page | Arturo Yánez</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Chile</h1>
+        </div>
+    </header>
+    <main>
+        
+           <picture>
+                <source srcset="images/chile-humboldt.webp" media="(max-width: 1000px)">
+                <source media="(min-width: 1001px )" srcset="images/chile-vicuña.webp">
+                <img src="images/chile-vicuña.webp" alt="Landscape of Chile">
+           </picture>
+        <div>
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><span>Area</span> : 756,626 km²</li>
+                    <li><span>Population :</span> 19.86 million</li>
+                    <li><span>Capital :</span> Santiago</li>
+                    <li><span>Languages :</span> Spanish</li>
+                    <li><span>Currency :</span> Chilean Peso - CLP</li>
+                    <li><span>Time Zone :</span> UTC-03:00</li>
+                    <li><span>Calling Code :</span> +56 9</li>
+                    <li><span>Internet TLD :</span> .cl</li>
+                </ul>
+            </section>
+
+            
+            <section class="weather">
+                <h2 class="weather-title">Weather</h2>
+                
+                <img class="logo" src="images/weather-icon.svg" alt="weather-icon" width="50px" height="auto">
+                
+                <ul>
+                    <li><span>Temperature :</span> 10</li>
+                    <li><span>Wind Speed :</span> 5 km/h</li>
+                    <li><span>Wind Chill :</span><span id="windchill"></span></li>
+                    <li><span>Conditions</span> Partly Cloudy</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    
+    
+    
+    
+    
+    <footer>
+        <p>©<span id="currentyear"></span> | Arturo Andrés Yánez | Chile</p>
+        <p class="last-mod">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
