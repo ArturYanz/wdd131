@@ -74,13 +74,10 @@ section {
     line-height: 1.6;
 }
 
-.data li span, .weather li span {
+.label {
    font-weight: bold; 
 }
 
-#windshill {
-    font-weight: none;
-}
 
 .weather {
     display: flex;
@@ -91,6 +88,8 @@ section {
 .logo {
     margin: 0.5rem 0;
     position: static;
+    width: 50px;
+    height: auto;
     
 }
 
