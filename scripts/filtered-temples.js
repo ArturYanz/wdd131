@@ -187,6 +187,7 @@ function createTempleCard(filteredTemples) {
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", 500)
         img.setAttribute("height", 300)
+        img.setAttribute("fetchpriority", "high")
 
         card.appendChild(name);
         card.appendChild(location);
