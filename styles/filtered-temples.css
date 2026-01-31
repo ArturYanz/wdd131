@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+    --body-color: rgb(186, 175, 118);
+    --text-color: rgb(0, 0, 0);
+    --nav-color: rgb(69, 51, 28);
+    --nav-text: #fff;
+    --nav-hover: rgb(111, 103, 103);
+}
+
+@media screen and (max-width: 2000px){
+    
+
+
+    body {
+        background-color: var(--body-color);
+        color: var(--text-color);
+
+    
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: var(--nav-text);
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "x";
+    }
+  
+   
+    header {
+        background-color: var(--nav-color);
+        color: var(--nav-text);
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: var(--nav-color);
+        color: var(--nav-text);
+
+    }
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--nav-text);
+    }
+
+    .navigation a:hover {
+        font-size: 35px;
+        color: var(--nav-hover);
+    }
+
+    .open a {
+        display: block;
+    }
+
+
+    header p {
+        font-size: 35px;
+        color: var(--nav-text);
+        
+    }
+
+
+    /* main */
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin: 1em;
+    }
+
+
+    .res-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .res-grid section {
+        background-color: var(--nav-color);
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        max-width: 360px;
+        width: 100%;
+        color: var(--nav-text);
+    }
+    
+    .res-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+    }
+
+    .res-grid h3 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    .res-grid p {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: var(--nav-color);
+        color: var(--nav-text);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    .last-mod {
+        font-size: 35px;
+    }
+    
+}

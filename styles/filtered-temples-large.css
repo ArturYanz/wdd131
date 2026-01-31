@@ -1,0 +1,60 @@
+@media screen and (min-width: 800px) {
+    
+
+
+    body {
+        width: 100%;
+    }
+
+    #menu {
+            display: none;
+    
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        color: var(--nav-text);
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        color: var(--nav-text);
+        flex: 1;
+        justify-content: center;
+    
+    }
+
+    .navigation {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    header p {
+        padding-top: 0.35rem;
+        
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 30px;
+        
+    }
+
+    
+
+    main {
+        width: 100%;
+    }
+
+    .res-grid {
+           
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        justify-items: center;
+    }
+}
