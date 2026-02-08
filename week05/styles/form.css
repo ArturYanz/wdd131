@@ -1,0 +1,203 @@
+
+
+:root {
+    --main-color: rgba(104, 117, 255, 0.733);
+    --form-color: rgb(148, 231, 253);
+}
+
+
+
+
+
+body {
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.f1 {
+    background-color: var(--form-color);
+    margin: 1rem 0 0 1rem;
+    padding: 1rem 0;
+
+}
+
+h1, footer {
+    background-color: blueviolet;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0;
+}
+
+.features {
+    width: 80%;
+    margin: 1rem auto .5rem auto;
+    text-align: left;
+}
+
+.features span {
+    font-weight: normal;
+    font-size: .85rem;
+}
+
+footer {
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main {
+    max-width: 400px;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars>label:hover {
+    color: #ff00bf;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+
+.f1 div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+
+.f1 input[type="text"],
+.f1 input[type="date"],
+.f1 select {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 400px;
+    appearance: none;
+    margin-left: .5rem;
+}
+
+
+.f1 input[type="radio"],
+.f1 input[type="checkbox"] {
+    margin-right: 6px;
+    
+}
+
+.f1 input[type="submit"] {
+    display: block;
+    width: 80%;
+    margin: 1.5rem auto 2rem auto;
+    border: none;
+    border-radius: 8px;
+    padding: .9rem;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1rem;
+    box-shadow: 1px 1px 4px #999;
+    cursor: pointer;
+}
+
+.f1 input[type="submit"]:hover {
+    background-color: #2f4590;
+}
+
+.f1 input:required {
+    border-right: 4px solid red;
+}
+
+.f1 input:required:valid {
+    border-right: 4px solid green;
+}
+
+.f1 label:has(input[type="checkbox"])
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .25rem 0;
+    margin-left: 1rem;
+}
+
+
+.f1 label {
+    margin-top: .5rem ;
+    padding: 1rem 0 .25rem .5rem;
+}
+
+.f1 textarea {
+    width: 80%;
+    height: 100px;
+    resize: none;
+    margin: 0 auto;
+    margin-left: .5rem;
+}
+
+.stars {
+    transform: translateY(-20px);
+}
+
+
+@media screen  and (min-width: 768px) 
+{
+    body {
+        max-width: 100%;
+        align-items: center;
+        
+    }
+
+    main, .f1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+    main {
+        align-items: center;
+    }
+
+    h1, .f1, footer {
+        max-width: 600px;
+    }
+
+    
+
+    
+}
+
