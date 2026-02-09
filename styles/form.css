@@ -27,7 +27,8 @@ body {
 }
 
 h1, footer {
-    background-color: blueviolet;
+    background-color: #3b1a5a;
+    color: #fff;
     padding: 1rem;
     width: 100%;
     max-width: 400px;
@@ -66,6 +67,7 @@ input[type="radio"] {
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
+    transform: translateY(-20px);
 }
 
 .stars>label {
@@ -127,7 +129,7 @@ input[type="radio"] {
     border: none;
     border-radius: 8px;
     padding: .9rem;
-    background-color: var(--main-color);
+    background-color: #2f4590;
     color: white;
     font-size: 1rem;
     box-shadow: 1px 1px 4px #999;
@@ -135,7 +137,7 @@ input[type="radio"] {
 }
 
 .f1 input[type="submit"]:hover {
-    background-color: #2f4590;
+    background-color: #51629a;
 }
 
 .f1 input:required {
@@ -167,10 +169,6 @@ input[type="radio"] {
     resize: none;
     margin: 0 auto;
     margin-left: .5rem;
-}
-
-.stars {
-    transform: translateY(-20px);
 }
 
 
